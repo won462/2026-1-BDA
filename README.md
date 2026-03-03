@@ -2,8 +2,8 @@
 2026년 1학기 '빅데이터분석프로그래밍' 교과목
 
 ## 온라인 출석과 수업 참여
-- [A반(QA) 수요일 오전](https://docs.google.com/spreadsheets/d/1N8uAN8wdkesqQDgUMj6BYm1ZH_T5Vr_xAnqdUs2YVHk/edit?usp=sharing)
-- [B반(QB) 수요일 오후](https://docs.google.com/spreadsheets/d/1poMied2-XKLzt-0Ngfbf9sF4BNnrC8WfkYNEkqyveSg/edit?usp=sharing)
+- [A반(QA) 수요일 오전]()
+- [B반(QB) 수요일 오후]()
 
 ## 타이타닉 열(변수) 설명
 - survived : 0 = 사망, 1 = 생존
