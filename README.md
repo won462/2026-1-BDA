@@ -2,8 +2,12 @@
 2026년 1학기 '빅데이터분석프로그래밍' 교과목
 
 ## 온라인 출석과 수업 참여
-- [A반(QA) 수요일 오전]()
-- [B반(QB) 수요일 오후]()
+- [A반(QA) 수요일 오전](https://docs.google.com/spreadsheets/d/1D6ayWWOMeVnYbkdMYzPTb6pRjdNcvLFk4VPmn_ylpus/edit?usp=sharing)
+- [B반(QB) 수요일 오후](https://docs.google.com/spreadsheets/d/1eSEnDMEoiSUiUgyeKz_xyt1tmn8EPJ3cRPKXZdKE7i4/edit?usp=sharing)
+
+## 시험 일정
+- 중간고사 2026/4/22수 오후 3시
+- 기말고사 2026/6/17수 오후 3시
 
 ## 타이타닉 열(변수) 설명
 - survived : 0 = 사망, 1 = 생존
@@ -26,9 +30,10 @@
 - ![image](https://github.com/user-attachments/assets/8be11782-751f-4934-ac37-57930fbbc1f3)
 
 ## 데이터분석 프로그래밍(4-5명 팀 과제)
-- 과제1: 지정 데이터(titanic1309.csv) 분석: 타이타닉호 데이터 분석
-- 과제2: 자유 데이터 분석: 공공 데이터 분석 선택
-- A반 6/3(수), B반 6/3(수) 수업에서 발표
+- 다음 두 과제를 모두 수행
+  - 과제1: 지정 데이터(titanic1309.csv) 분석: 타이타닉호 데이터 분석
+  - 과제2: 자유 데이터 분석: 공공 데이터 분석 선택
+- A반 5/27(수), B반 5/27(수) 수업에서 발표
   - 주피터노트북(발표 내용과 코드)으로 발표(발표시간은 약 10~15분)
 - 데이터 공모전에 참가하는 방향으로 자유 데이터 활용
   - [교통데이터 공모전](https://www.bigdata-transportation.kr/pageant/dashboard/CMPE_000000000020041)
