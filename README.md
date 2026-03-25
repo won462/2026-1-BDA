@@ -6,8 +6,8 @@
 - [B반(QB) 수요일 오후](https://docs.google.com/spreadsheets/d/1eSEnDMEoiSUiUgyeKz_xyt1tmn8EPJ3cRPKXZdKE7i4/edit?usp=sharing)
 
 ## 시험 일정
-- 중간고사 2026/4/22수 오후 3시
-- 기말고사 2026/6/17수 오후 3시
+- 중간고사 2026/4/22수 오후 1:00 ~ 2:00
+- 기말고사 2026/6/17수 오후 1:00 ~ 2:00
 
 ## 타이타닉 열(변수) 설명
 - survived : 0 = 사망, 1 = 생존
