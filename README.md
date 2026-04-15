@@ -6,8 +6,12 @@
 - [B반(QB) 수요일 오후](https://docs.google.com/spreadsheets/d/1eSEnDMEoiSUiUgyeKz_xyt1tmn8EPJ3cRPKXZdKE7i4/edit?usp=sharing)
 
 ## 시험 일정
-- 중간고사 2026/4/22수 오후 1:00 ~ 2:00
-- 기말고사 2026/6/17수 오후 1:00 ~ 2:00
+- 중간고사
+  - QA 2026/4/22수 오전 11:00 ~ 11:50 6-406호
+  - QB 2026/4/22수 오후 14:00 ~ 14:50 6-406호
+- 기말고사
+  - QA 2026/6/17수 오후 12:00 ~ 12:50 
+  - QB 2026/6/17수 오후 14:00 ~ 14:50 
 
 ## 타이타닉 열(변수) 설명
 - survived : 0 = 사망, 1 = 생존
@@ -73,3 +77,13 @@ def display_side_by_side(*args):
 > 💡 `Ctrl + M` (`Cmd + M` on Mac)을 누른 후 해당 키를 입력하면 실행됩니다.  
 > Colab에서 셀을 빠르게 조작할 때 활용해 보세요! 🚀
 
+
+---
+## numpy code
+```
+# NumPy 라이브러리를 불러오고, 배열 출력 형식을 보기 좋게 설정합니다.
+import numpy as np
+# suppress=True는 과학적 표기법(예: 1.23e-10)을 억제하고
+# 항상 고정 소수점 표기법(fixed point notation)을 사용
+np.set_printoptions(suppress=True, precision=4)
+```
