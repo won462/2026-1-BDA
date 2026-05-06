@@ -37,9 +37,9 @@
 - [A반(QA) 수요일 오전](https://docs.google.com/spreadsheets/d/1D6ayWWOMeVnYbkdMYzPTb6pRjdNcvLFk4VPmn_ylpus/edit?usp=sharing)
 - [B반(QB) 수요일 오후](https://docs.google.com/spreadsheets/d/1eSEnDMEoiSUiUgyeKz_xyt1tmn8EPJ3cRPKXZdKE7i4/edit?usp=sharing)
 
-## 시험 일정
+## 시험 일정과 점수
 - 중간고사
-  - QA 2026/4/22수 오전 11:00 ~ 11:50 6-406호
+  - [QA 2026/4/22수 오전 11:00 ~ 11:50 6-406호](https://claude.ai/artifacts/latest/3c19a0fb-ec76-4a1c-b993-26b5f3806dcc)
   - QB 2026/4/22수 오후 14:00 ~ 14:50 6-406호
 - 기말고사
   - QA 2026/6/17수 오후 12:00 ~ 12:50 
@@ -77,7 +77,7 @@
 ## 지도 시각화 수업 참조
 - [웹참조](https://pjh09050.tistory.com/11)
   
-## 가로로 데이터프레임 출력 함수
+## 가로로 여러 데이터프레임 출력 함수
 ```Python
 from IPython.display import display_html
 def display_side_by_side(*args):
@@ -87,6 +87,38 @@ def display_side_by_side(*args):
         html_str += df.to_html() + '&nbsp;'*4
     display_html(html_str.replace('table','table style="display:inline"'), raw=True)
 ```
+
+## 가로로 여러 시리즈 출력 함수
+```Python
+from IPython.display import display_html
+
+def display_series_side_by_side(*args, names=None):
+    """여러 Series를 옆으로 나란히 표시한다.
+    
+    Parameters
+    ----------
+    *args   : pd.Series 객체들
+    names   : 각 Series의 제목 리스트 (생략 시 Series.name 사용)
+    """
+    html_str = ''
+    for i, s in enumerate(args):
+        # 제목 결정: names 인자 > Series.name > 인덱스 번호
+        if names and i < len(names):
+            title = names[i]
+        elif s.name is not None:
+            title = s.name
+        else:
+            title = f'Series {i}'
+        
+        table_html = s.to_frame(name=title).to_html()
+        html_str += table_html + '&nbsp;' * 4
+
+    display_html(
+        html_str.replace('table', 'table style="display:inline; vertical-align:top"'),
+        raw=True
+    )
+```
+
 ## Google Colab 셀 복사 및 붙여넣기 단축키
 
 - 🔹 셀 복사 & 붙여넣기 단축키
@@ -111,11 +143,18 @@ def display_side_by_side(*args):
 
 
 ---
-## numpy code
+
+### numpy 소수 자릿 설정
 ```
 # NumPy 라이브러리를 불러오고, 배열 출력 형식을 보기 좋게 설정합니다.
 import numpy as np
 # suppress=True는 과학적 표기법(예: 1.23e-10)을 억제하고
 # 항상 고정 소수점 표기법(fixed point notation)을 사용
 np.set_printoptions(suppress=True, precision=4)
+```
+
+### pandas 소수 자릿 설정
+```Python
+pd.set_option('display.float_format', '{:.2f}'.format)  # 전역 적용
+pd.reset_option('display.float_format')                 # 초기화
 ```
